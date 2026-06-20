@@ -98,7 +98,7 @@ Filtro as informações dos anos que desejo analisar, aqui nesse exemplo pegamos
 Criamos uma lógica com o mutate:\
 `mutate( mes_num = case_when( mes_nome == "JAN" ~ "01", mes_nome == "FEV" ~ "02", mes_nome == "MAR" ~ "03", mes_nome == "ABR" ~ "04", mes_nome == "MAI" ~ "05", mes_nome == "JUN" ~ "06", mes_nome == "JUL" ~ "07", mes_nome == "AGO" ~ "08", mes_nome == "SET" ~ "09", mes_nome == "OUT" ~ "10", mes_nome == "NOV" ~ "11", mes_nome == "DEZ" ~ "12" ),`
 
-## A Mudança no Câmbio de Fixo para Flutuante 
+## A Mudança no Câmbio de Fixo para Flutuante
 
 ```{r}
 #| eval: false

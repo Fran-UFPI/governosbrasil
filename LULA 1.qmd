@@ -3,8 +3,6 @@ title: "Os Governos Lula: O Boom das Commodities e a Expansão do Mercado Intern
 format: html
 ---
 
-
-
 ```{r}
 #| echo: false
 #| out.width: "30%"
@@ -36,6 +34,12 @@ A resposta do novo governo ao cenário herdado foi imediata e surpreendente — 
 A partir de 2004, os frutos dessa disciplina começaram a aparecer. O **boom internacional das commodities** trouxe dólares para o Brasil, valorizou o real e aqueceu a economia — o PIB cresceu 5,7% naquele ano. Com a inflação cedendo e o câmbio se apreciando, o Banco Central ganhou espaço para iniciar uma trajetória gradual de queda da Selic. O período 2004–2006 foi marcado por essa tensão permanente entre crescimento e controle de preços, com o BC precisando subir os juros novamente em 2005 diante de nova pressão inflacionária. Ao final do mandato, porém, o saldo era positivo: inflação convergindo para a meta, câmbio valorizado e credibilidade reconquistada.
 
 # A Inflação (IPCA)
+
+O início do governo Lula foi marcado por uma pressão inflacionária que não nasceu com a posse — nasceu muito antes dela. Ao longo de 2002, a simples perspectiva de uma vitória do PT havia sido suficiente para desestabilizar os mercados. O programa econômico do partido, batizado de **"A Ruptura Necessária"**, propunha, entre outras coisas, a renegociação da dívida externa e limitações ao pagamento de juros — palavras que, no meio financeiro, soavam como sinais de calote. O resultado foi previsível: o dólar disparou de R$ 2,32 para quase R$ 3,89, os prêmios de risco explodiram e a inflação encerrou 2002 em 12,5%.
+
+A virada começou ainda durante a campanha. Com a vitória cada vez mais provável, o PT percebeu que precisava reconquistar a confiança dos mercados antes mesmo de chegar ao poder. Em junho de 2002, o partido divulgou a **Carta ao Povo Brasileiro**, comprometendo-se a preservar o superávit primário e honrar os acordos com o FMI — linguagem praticamente idêntica à que o próprio PT havia criticado nos anos anteriores. Em agosto, veio a **Nota sobre o Acordo com o FMI**, confirmando que o partido respeitaria o que havia sido negociado pelo governo anterior. A mensagem estava sendo enviada: o PT tinha rompido com a ideia de ruptura.
+
+Mas o mercado ainda não estava convencido. Quando Lula tomou posse em janeiro de 2003, a Selic já estava em 25% ao ano e a inflação herdada seguia pressionada. A resposta do novo governo foi imediata: sob o comando de **Antonio Palocci** no Ministério da Fazenda, o BC elevou os juros para 26,5% ao ano e a meta de superávit primário foi fixada em 4,25% do PIB — superior à do governo anterior. Era o choque de credibilidade que o mercado exigia, e o gráfico abaixo mostra, com precisão, o seu efeito sobre os preços.
 
 ```{r}
 #| echo: false
@@ -88,6 +92,17 @@ ggplot(dados_fhc, aes(x= data_final, y= ipca_trimestral)) +
   theme_minimal()+
 theme(legend.position = "bottom")
 ```
+
+O gráfico acima mostra a **variação trimestral do IPCA** ao longo do primeiro mandato de Lula — e a primeira coisa que chama atenção é a queda abrupta no início de 2003. A linha parte de quase 8% no primeiro trimestre e despenca para próximo de zero já no segundo semestre do mesmo ano. Esse movimento não foi coincidência: foi o resultado direto de uma política monetária deliberadamente rígida, aplicada num momento em que a credibilidade do novo governo estava em xeque.
+
+O cenário herdado era de forte pressão. Ao longo de 2002, a simples perspectiva de uma vitória do PT havia sido suficiente para desestabilizar os mercados. O dólar disparou, os prêmios de risco explodiram e a inflação acumulada chegou a 12,5% no ano — bem acima da meta. O mercado não sabia o que esperar de um ex-sindicalista à frente da economia. Essa incerteza foi o combustível que levou a inflação trimestral ao pico visível no início do gráfico.
+
+A resposta do governo foi imediata. Contrariando toda a sua trajetória histórica, o PT manteve o regime de metas de inflação, elevou a Selic para 26,5% ao ano e fixou uma meta de superávit primário ainda mais apertada que a do governo anterior. O custo foi sentido rapidamente: com o crédito caro e o consumo retraído, a inflação trimestral cedeu com força ao longo de 2003.
+
+A partir de 2004, o gráfico muda de comportamento. A linha para de cair e passa a oscilar numa faixa entre 1% e 2,5% ao trimestre — um padrão de estabilidade que se mantém até 2005. Esse movimento de vai e vem reflete a tensão que o Banco Central enfrentou naquele período: com a economia aquecendo pelo boom das commodities e o consumo das famílias crescendo, havia risco de que a inflação voltasse a subir. O BC reagiu elevando os juros novamente em 2004, e o gráfico mostra o resultado — a oscilação se manteve controlada, sem grandes picos.
+
+O final do mandato, em 2006, traz o momento mais favorável de todo o período: a linha toca próximo de zero em dois momentos distintos, sinalizando uma inflação trimestral praticamente inexistente. Era o resultado acumulado de quatro anos de disciplina monetária — e o sinal de que o regime de metas de inflação, que o próprio PT havia criticado durante anos, estava funcionando.
+
 
 ## **Variação do câmbio**
 
@@ -182,6 +197,10 @@ O saldo dos dois mandatos, ao final, era inegavelmente positivo: inflação méd
 
 ## A Inflação (IPCA)
 
+O segundo mandato de Lula começou num cenário bem diferente do primeiro. Em 2007, a inflação já estava sob controle, o regime de metas havia se consolidado e a economia crescia de forma consistente. Mas esse ambiente favorável trazia consigo um risco silencioso: com o consumo das famílias se expandindo, o crédito em aceleração e o gasto público crescendo de forma expressiva — especialmente após a troca de **Antonio Palocci** por **Guido Mantega** no Ministério da Fazenda —, as pressões de demanda voltavam a se acumular. A mudança de postura do governo era evidente: o superávit primário foi gradualmente reduzido, o BNDES ampliou de forma substancial seu papel na economia e a retórica oficial deixou de enfatizar a continuidade para passar a se diferenciar do governo anterior. Era o início do que Giambiagi chamaria de afrouxamento da ortodoxia.
+
+O gráfico abaixo mostra a **variação trimestral do IPCA** entre 2007 e 2010 — e o que ele revela é uma inflação que respondeu, com precisão, a cada um dos movimentos da economia nesse período.
+
 ```{r}
 #| echo: false
 #| message: false
@@ -233,6 +252,12 @@ ggplot(dados_fhc, aes(x= data_final, y= ipca_trimestral)) +
   theme_minimal()+
 theme(legend.position = "bottom")
 ```
+
+Olhando para a linha, o primeiro movimento que chama atenção é a subida gradual entre 2007 e meados de 2008. A variação trimestral parte de cerca de 1,3% e vai subindo de forma consistente até atingir o pico de pouco mais de 2% em meados de 2008. Esse não foi um movimento aleatório: era a pressão de uma economia aquecida, com o consumo crescendo acima da capacidade produtiva e as commodities ainda em alta no mercado internacional. O Banco Central já havia respondido elevando a Selic — mas a inflação continuava subindo.
+
+A virada veio com a crise financeira global. No final de 2008, a demanda mundial despencou, os preços das commodities desabaram e o consumo interno recuou. O gráfico registra esse choque com clareza: a variação trimestral cai de forma abrupta, chegando próxima de 1% em 2009. Era a deflação de demanda provocada pela recessão global — e o BC respondeu cortando a Selic de 13,75% para 8,75%, o menor patamar da história do regime de metas até então.
+
+A recuperação foi rápida. Com as medidas anticíclicas do governo — corte de impostos, expansão do crédito público e aumento do gasto — a economia voltou a crescer com força. O PIB de 2010 fechou em 7,5%, e o gráfico mostra a inflação respondendo na mesma direção: a variação trimestral volta a subir ao longo de 2010, encerrando o mandato num patamar mais alto do que havia começado. A oscilação brusca no final — uma queda seguida de alta acentuada rumo a 2011 — não é estabilização. É o sinal de que a pressão inflacionária estava se acumulando e seria herdada, com força total, pelo governo seguinte.
 
 ## O Regime Cambial
 

@@ -1,1 +1,118 @@
 /* css styles */
+/* ── Fontes ── */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+
+/* ── Variáveis ── */
+:root {
+  --verde-escuro: #1a3a2a;
+  --verde-medio: #1D9E75;
+  --verde-claro: #E1F5EE;
+  --texto: #1a1a1a;
+  --texto-suave: #555;
+  --borda: #d0e8dc;
+}
+
+/* ── Base ── */
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--texto);
+  background-color: #f9fbfa;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Merriweather', serif;
+  color: var(--verde-escuro);
+}
+
+/* ── Navbar ── */
+.navbar {
+  background-color: var(--verde-escuro) !important;
+  border-bottom: 2px solid var(--verde-medio);
+}
+
+.navbar-brand, .nav-link {
+  color: #e8f5ee !important;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: var(--verde-medio) !important;
+}
+
+/* ── Hero (título da home) ── */
+.quarto-title h1 {
+  font-size: 2.2rem;
+  color: var(--verde-escuro);
+  border-bottom: 3px solid var(--verde-medio);
+  padding-bottom: 0.4rem;
+}
+
+.quarto-title .subtitle {
+  color: var(--texto-suave);
+  font-size: 1.1rem;
+}
+
+/* ── Grid de governos ── */
+.grid h3 {
+  font-size: 1.1rem;
+  color: var(--verde-escuro);
+  border-left: 4px solid var(--verde-medio);
+  padding-left: 10px;
+  margin-bottom: 6px;
+}
+
+.grid strong {
+  color: var(--verde-medio);
+  font-size: 0.85rem;
+}
+
+.grid p {
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+}
+
+.grid a {
+  color: var(--verde-medio);
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.grid a:hover {
+  text-decoration: underline;
+}
+
+/* ── Tabela ── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+thead tr {
+  background-color: var(--verde-escuro);
+  color: #e8f5ee;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--verde-claro);
+}
+
+td, th {
+  padding: 8px 14px;
+  border: 1px solid var(--borda);
+}
+
+/* ── Seções h2 ── */
+h2 {
+  margin-top: 2.5rem;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--borda);
+}
+
+/* ── Rodapé ── */
+.nav-footer {
+  background-color: var(--verde-escuro);
+  color: #9fcfb0;
+  font-size: 0.85rem;

@@ -15,11 +15,12 @@ website:
             href: FHC.qmd
           - text: "Lula I (2003–2011)"
             href: LULA 1.qmd
- 
+      - text: "Sobre"
+        href: "about.qmd"
 format:
   html:
     theme: cosmo
-    css: assets/custom.css
+    css: styles.css
     toc: true
     toc-depth: 3
     lang: pt-BR

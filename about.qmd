@@ -38,7 +38,7 @@ library(magrittr)
   Em vez de: `filtrado(selecionado(dados))`\
   Você escreve: `dados %>% selecionado() %>% filtrado()`
 
-## O gráfico de inflação (IPCA)
+## O Gráfico de Inflação (IPCA)
 
 Para analisar a inflação nos governos, decidimos baixar do IBGE uma planilha da *Série Histórica do IPCA*.
 

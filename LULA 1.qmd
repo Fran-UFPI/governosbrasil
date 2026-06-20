@@ -3,13 +3,7 @@ title: "Os Governos Lula: O Boom das Commodities e a Expansão do Mercado Intern
 format: html
 ---
 
-```{r}
-#| echo: false
-#| out.width: "30%"
-#| fig.align: "center"
-
-knitr::include_graphics("imagens/Lula.jpg")
-```
+![](imagens/Lula.jpg){fig-align="center"width="30%"}
 
 ## Introdução
 
@@ -35,7 +29,7 @@ A partir de 2004, os frutos dessa disciplina começaram a aparecer. O **boom int
 
 # A Inflação (IPCA)
 
-O início do governo Lula foi marcado por uma pressão inflacionária que não nasceu com a posse — nasceu muito antes dela. Ao longo de 2002, a simples perspectiva de uma vitória do PT havia sido suficiente para desestabilizar os mercados. O programa econômico do partido, batizado de **"A Ruptura Necessária"**, propunha, entre outras coisas, a renegociação da dívida externa e limitações ao pagamento de juros — palavras que, no meio financeiro, soavam como sinais de calote. O resultado foi previsível: o dólar disparou de R$ 2,32 para quase R$ 3,89, os prêmios de risco explodiram e a inflação encerrou 2002 em 12,5%.
+O início do governo Lula foi marcado por uma pressão inflacionária que não nasceu com a posse — nasceu muito antes dela. Ao longo de 2002, a simples perspectiva de uma vitória do PT havia sido suficiente para desestabilizar os mercados. O programa econômico do partido, batizado de **"A Ruptura Necessária"**, propunha, entre outras coisas, a renegociação da dívida externa e limitações ao pagamento de juros — palavras que, no meio financeiro, soavam como sinais de calote. O resultado foi previsível: o dólar disparou de R\$ 2,32 para quase R\$ 3,89, os prêmios de risco explodiram e a inflação encerrou 2002 em 12,5%.
 
 A virada começou ainda durante a campanha. Com a vitória cada vez mais provável, o PT percebeu que precisava reconquistar a confiança dos mercados antes mesmo de chegar ao poder. Em junho de 2002, o partido divulgou a **Carta ao Povo Brasileiro**, comprometendo-se a preservar o superávit primário e honrar os acordos com o FMI — linguagem praticamente idêntica à que o próprio PT havia criticado nos anos anteriores. Em agosto, veio a **Nota sobre o Acordo com o FMI**, confirmando que o partido respeitaria o que havia sido negociado pelo governo anterior. A mensagem estava sendo enviada: o PT tinha rompido com a ideia de ruptura.
 
@@ -102,7 +96,6 @@ A resposta do governo foi imediata. Contrariando toda a sua trajetória históri
 A partir de 2004, o gráfico muda de comportamento. A linha para de cair e passa a oscilar numa faixa entre 1% e 2,5% ao trimestre — um padrão de estabilidade que se mantém até 2005. Esse movimento de vai e vem reflete a tensão que o Banco Central enfrentou naquele período: com a economia aquecendo pelo boom das commodities e o consumo das famílias crescendo, havia risco de que a inflação voltasse a subir. O BC reagiu elevando os juros novamente em 2004, e o gráfico mostra o resultado — a oscilação se manteve controlada, sem grandes picos.
 
 O final do mandato, em 2006, traz o momento mais favorável de todo o período: a linha toca próximo de zero em dois momentos distintos, sinalizando uma inflação trimestral praticamente inexistente. Era o resultado acumulado de quatro anos de disciplina monetária — e o sinal de que o regime de metas de inflação, que o próprio PT havia criticado durante anos, estava funcionando.
-
 
 ## **Variação do câmbio**
 

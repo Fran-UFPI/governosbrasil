@@ -3,13 +3,7 @@ title: "A Era FHC (1995–2002):Uma Busca Por Estabilidade Econômica"
 format: html
 ---
 
-```{r}
-#| echo: false
-#| out.width: "30%"
-#| fig.align: "center"
-
-knitr::include_graphics("imagens/FHc.jpg")
-```
+![](imagens/FHC.jpg){fig-align="center"width="30%"}
 
 ## Introdução
 

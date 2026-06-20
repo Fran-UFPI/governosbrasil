@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About – Governos Brasileiros 1995–2025</title>
+<title>Falando sobre os códigos – Governos Brasileiros 1995–2025</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -37,8 +72,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -74,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="assets/custom.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -121,41 +157,201 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#pacotes-necessários" id="toc-pacotes-necessários" class="nav-link active" data-scroll-target="#pacotes-necessários">Pacotes Necessários</a></li>
+  <li><a href="#o-gráfico-de-inflação-ipca" id="toc-o-gráfico-de-inflação-ipca" class="nav-link" data-scroll-target="#o-gráfico-de-inflação-ipca">O gráfico de inflação (IPCA)</a></li>
+  <li><a href="#a-mudança-no-câmbio-de-fixo-para-flutuante" id="toc-a-mudança-no-câmbio-de-fixo-para-flutuante" class="nav-link" data-scroll-target="#a-mudança-no-câmbio-de-fixo-para-flutuante">A Mudança no Câmbio de Fixo para Flutuante</a></li>
+  <li><a href="#comparativo-monetário" id="toc-comparativo-monetário" class="nav-link" data-scroll-target="#comparativo-monetário">Comparativo Monetário</a></li>
+  <li><a href="#taxa-selic" id="toc-taxa-selic" class="nav-link" data-scroll-target="#taxa-selic">Taxa Selic</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<div class="quarto-about-jolla">
-  <img src="profile.jpg" class="about-image
-  round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block default">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Falando sobre os códigos</h1>
 </div>
+
+
+
 <div class="quarto-title-meta">
+
+    
+  
+    
   </div>
-</header><main class="content" id="quarto-document-content">
-<p>About this blog</p>
+  
 
 
-</main> 
-  <hr class="about-sep">
-   <div class="about-links">
-  <a href="https://bsky.app/" class="about-link" rel="" target="">
-    <i class="bi bi-bluesky"></i>
-     <span class="about-link-text">Bluesky</span>
-  </a>
-  <a href="https://linkedin.com" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
+</header>
+
+
+<section id="pacotes-necessários" class="level2">
+<h2 class="anchored" data-anchor-id="pacotes-necessários">Pacotes Necessários</h2>
+<p>Para instalar use o comando <code>install.packages()</code></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rbcb)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(magrittr)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
+<ul>
+<li><p><code>tidyverse</code>: Vamos chamar de a “coleção de pacotes” (que inclui a maioria dos que estão a baixo).</p></li>
+<li><p><code>rbcb</code>: Esse é o pacote necessário para pegar os dados direto do Banco Central, como o Câmbio, e a Taxa Selic</p></li>
+<li><p><code>dplyr</code>: Esse é o pacote que mais usamos, para filtar linhas “filter()”, selecionar colunas “select()”, criar variáveis “mutate()” e agregar dados “summarise()”.</p></li>
+<li><p><code>ggplot2</code>: Usamos para a visualização de dados, e pode ser construido em camadas (dados+ estética+ formas geométricas).</p></li>
+<li><p><code>readxl</code>: Usamos esse pacote para importar arquivos do Excel, aqui neste projeto foi o IPCA, decidimos baixar a série histórica, ou seja a planilha “ipca.xls” que pode ser vista no script logo abaixo.</p></li>
+<li><p>lubridate: Como no nosso projeto vamos analisar as variáveis em diferentes governos e por ano, esse pacote nos ajuda a extrair uma data idependente do formato que a data esteja, como por exemplo: “07-07-2005”, “07/07/2005” ou “07 de julho de 2005”</p></li>
+<li><p>janitor: Limpeza de colunas a função estrela dele é a <code>clean_names()</code>. Se você tem uma coluna chamada <code>Data do Gasto (R$)</code>, ela vira automaticamente <code>data_do_gasto_rs</code> (sem espaços, sem acentos e em letras minúsculas).</p></li>
+<li><p>magrittr: Ele pega o resultado da linha de cima e joga para a linha de baixo. A leitura do código passa a ser “faça isso e então faça aquilo”, usa o <code>%&gt;%</code> para conectar as ações em uma sequência lógica.<br>
+Em vez de: <code>filtrado(selecionado(dados))</code><br>
+Você escreve: <code>dados %&gt;% selecionado() %&gt;% filtrado()</code></p></li>
+</ul>
+</section>
+<section id="o-gráfico-de-inflação-ipca" class="level2">
+<h2 class="anchored" data-anchor-id="o-gráfico-de-inflação-ipca">O gráfico de inflação (IPCA)</h2>
+<p>Para analisar a inflação nos governos, decidimos baixar do IBGE uma planilha da <em>Série Histórica do IPCA</em>.</p>
+<p>vamos ver isso melhor no script:<br>
+</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dados_inflacao <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"planilhaIPCA/ipca.xls"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>dados_fhc <span class="ot">&lt;-</span> dados_inflacao <span class="sc">%&gt;%</span> </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">clean_names</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">ano=</span> <span class="dv">1</span>,</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">mes_nome=</span><span class="dv">2</span>,</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">numero_indice=</span><span class="dv">3</span>,</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">ipca_trimestral=</span><span class="dv">5</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fill</span>(ano, <span class="at">.direction =</span> <span class="st">"down"</span>)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>dados_fhc <span class="ot">&lt;-</span> dados_fhc <span class="sc">%&gt;%</span> </span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">numero_indice=</span> <span class="fu">as.numeric</span>(<span class="fu">gsub</span>(<span class="st">","</span>,<span class="st">"."</span>, numero_indice)),</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>         <span class="at">ipca_trimestral=</span> <span class="fu">as.numeric</span>(<span class="fu">gsub</span>(<span class="st">","</span>,<span class="st">"."</span>, ipca_trimestral))) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(ano<span class="sc">&gt;</span><span class="dv">1994</span> <span class="sc">&amp;</span> ano<span class="sc">&lt;</span><span class="dv">2003</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a> <span class="fu">mutate</span>(</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>   <span class="at">mes_num =</span> <span class="fu">case_when</span>(</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>      mes_nome <span class="sc">==</span> <span class="st">"JAN"</span> <span class="sc">~</span> <span class="st">"01"</span>, mes_nome <span class="sc">==</span> <span class="st">"FEV"</span> <span class="sc">~</span> <span class="st">"02"</span>, mes_nome <span class="sc">==</span> <span class="st">"MAR"</span> <span class="sc">~</span> <span class="st">"03"</span>,</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>      mes_nome <span class="sc">==</span> <span class="st">"ABR"</span> <span class="sc">~</span> <span class="st">"04"</span>, mes_nome <span class="sc">==</span> <span class="st">"MAI"</span> <span class="sc">~</span> <span class="st">"05"</span>, mes_nome <span class="sc">==</span> <span class="st">"JUN"</span> <span class="sc">~</span> <span class="st">"06"</span>,</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>      mes_nome <span class="sc">==</span> <span class="st">"JUL"</span> <span class="sc">~</span> <span class="st">"07"</span>, mes_nome <span class="sc">==</span> <span class="st">"AGO"</span> <span class="sc">~</span> <span class="st">"08"</span>, mes_nome <span class="sc">==</span> <span class="st">"SET"</span> <span class="sc">~</span> <span class="st">"09"</span>,</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>      mes_nome <span class="sc">==</span> <span class="st">"OUT"</span> <span class="sc">~</span> <span class="st">"10"</span>, mes_nome <span class="sc">==</span> <span class="st">"NOV"</span> <span class="sc">~</span> <span class="st">"11"</span>, mes_nome <span class="sc">==</span> <span class="st">"DEZ"</span> <span class="sc">~</span> <span class="st">"12"</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">data_final =</span> <span class="fu">as.Date</span>(<span class="fu">paste</span>(ano, mes_num, <span class="st">"01"</span>, <span class="at">sep =</span> <span class="st">"-"</span>))</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a> ) </span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(dados_fhc, <span class="fu">aes</span>(<span class="at">x=</span> data_final, <span class="at">y=</span> ipca_trimestral)) <span class="sc">+</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>( <span class="at">color=</span> <span class="st">"#302681"</span>, <span class="at">size=</span> <span class="fl">1.2</span>)<span class="sc">+</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_date</span>(<span class="at">date_breaks =</span> <span class="st">"1 year"</span>, <span class="at">date_labels =</span><span class="st">"%Y"</span>)<span class="sc">+</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="cf">function</span>(x)<span class="fu">paste0</span>(x,<span class="st">"%"</span>))<span class="sc">+</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a> <span class="at">title =</span> <span class="st">"Comportamento do IPCA na Era FHC: Consolidação da Estabilidade"</span>,</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>  <span class="at">subtitle =</span> <span class="st">"Inflação Acumulada a partir de Janeiro de 1995"</span>,</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> <span class="st">"Ano"</span>,</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> <span class="st">"Inflação trimestral %"</span>,</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"Fonte:Banco Central do Brasil/ SGS"</span>,</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>  )<span class="sc">+</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()<span class="sc">+</span></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a><span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
- <!-- /main -->
+<p>Nas primeiras linhas digo ao R o local onde está a planilha <code>read_excel("planilhaIPCA/ipca.xls")</code> , logo abaixo é criado um novo objeto <code>dados_fhc</code>.<br>
+Lembrando que os dados em questão são uma série Histórica, portanto observamos a tabela e realizamos as primeiras alterações:<code>clean_names()</code> :</p>
+<p>limpo os nomes das colunas, e logo depois nomeio somente as que vamos utilizar <code>rename( ano=1, mes_nome=2, numero_indice=3, ipca_trimestral= 5)</code> .</p>
+<p>Retiro os acentos e pontos, que podem atrapalhar durante a manipulação dos dados no R<br>
+<code>mutate(numero_indice= as.numeric(gsub(",",".", numero_indice)), ipca_trimestral= as.numeric(gsub(",",".", ipca_trimestral)))</code></p>
+<p>Filtro as informações dos anos que desejo analisar, aqui nesse exemplo pegamos os anos de governo FHC, portanto a linha do código fica: <code>filter(ano&gt;1994 &amp; ano&lt;2003)</code>.</p>
+<p>Criamos uma lógica com o mutate:<br>
+<code>mutate( mes_num = case_when( mes_nome == "JAN" ~ "01", mes_nome == "FEV" ~ "02", mes_nome == "MAR" ~ "03", mes_nome == "ABR" ~ "04", mes_nome == "MAI" ~ "05", mes_nome == "JUN" ~ "06", mes_nome == "JUL" ~ "07", mes_nome == "AGO" ~ "08", mes_nome == "SET" ~ "09", mes_nome == "OUT" ~ "10", mes_nome == "NOV" ~ "11", mes_nome == "DEZ" ~ "12" ),</code></p>
+</section>
+<section id="a-mudança-no-câmbio-de-fixo-para-flutuante" class="level2">
+<h2 class="anchored" data-anchor-id="a-mudança-no-câmbio-de-fixo-para-flutuante">A Mudança no Câmbio de Fixo para Flutuante</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>dados_cambio <span class="ot">&lt;-</span> <span class="fu">get_series</span>(<span class="dv">3697</span>, <span class="at">start_date =</span> <span class="st">"1995-01-01"</span>,<span class="at">end_date =</span> <span class="st">"2002-12-31"</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(dados_cambio)[<span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="st">"value"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>dados_cambio <span class="ot">&lt;-</span> dados_cambio <span class="sc">%&gt;%</span> </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">regime=</span> <span class="fu">if_else</span>(date<span class="sc">&lt;</span><span class="fu">as.Date</span>(<span class="st">"1999-01-13"</span>),</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>   <span class="st">"Câmbio Fixo"</span>,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>   <span class="st">"Câmbio Flutuante"</span>))</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(dados_cambio,<span class="fu">aes</span>(<span class="at">x=</span> date, <span class="at">y=</span> value, <span class="at">fill =</span> regime, <span class="at">color=</span> regime))<span class="sc">+</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_area</span>(<span class="at">alpha=</span> <span class="fl">0.2</span>,<span class="fu">aes</span>(<span class="at">group =</span> regime))<span class="sc">+</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">size=</span><span class="dv">1</span>)<span class="sc">+</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values=</span><span class="fu">c</span> (<span class="st">"Câmbio Fixo"</span><span class="ot">=</span><span class="st">"#2ca02c"</span>, </span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>   <span class="st">"Câmbio Flutuante"</span><span class="ot">=</span><span class="st">"#d62728"</span>))<span class="sc">+</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">"Câmbio Fixo"</span><span class="ot">=</span><span class="st">"#2ca02c"</span>,</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Câmbio Flutuante"</span><span class="ot">=</span><span class="st">"#d62728"</span>))<span class="sc">+</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_date</span>(<span class="at">date_breaks=</span><span class="st">"1 year"</span>, <span class="at">date_labels =</span> <span class="st">"%Y"</span>)<span class="sc">+</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels=</span><span class="cf">function</span>(x)<span class="fu">paste0</span>(<span class="st">"R$"</span>,<span class="fu">round</span>(x,<span class="dv">2</span>)))<span class="sc">+</span></span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Usei o pacote rbcb para puxar a série 3697 (Taxa de câmbio comercial de venda - R$ por US$) direto do Banco Central, delimitando o período entre o início do Plano Real (1995) e o fim do governo FHC (2002).</p>
+<p>Renomeação: Renomeia a segunda coluna para “value” para facilitar a manipulação no R</p>
+<p><code>dados_cambio &lt;- dados_cambio %&gt;% mutate(regime = if_else(date &lt; as.Date("1999-01-13"), "Câmbio Fixo", "Câmbio Flutuante"))</code></p>
+<p>Cria uma nova coluna chamada <code>regime</code>. Usando uma condição lógica (<code>if_else</code>), o código identifica que tudo que aconteceu antes de 13 de janeiro de 1999 (data da desvalorização do real e fim das bandas cambiais) foi <strong>Câmbio Fixo</strong> (ou bandas), e o que veio depois foi <strong>Câmbio Flutuante</strong>.</p>
+<p><code>ggplot(dados_cambio, aes(x = date, y = value, fill = regime, color = regime)) + geom_area(alpha = 0.2, aes(group = regime)) + geom_line(size = 1) +</code></p>
+<p>coloquei a data no eixo X e o valor do dólar no eixo Y.</p>
+<p>Camadas Visuais: Combina um gráfico de linha (geom_line) com uma sombra colorida por baixo da linha (geom_area) com 20% de opacidade (alpha = 0.2). A cor de ambas as camadas muda automaticamente dependendo do regime cambial.</p>
+<p><code>scale_fill_manual(values = c("Câmbio Fixo" = "#2ca02c", "Câmbio Flutuante" = "#d62728")) + scale_color_manual(values = c("Câmbio Fixo" = "#2ca02c", "Câmbio Flutuante" = "#d62728")) +</code></p>
+<p>Define cores específicas para cada regime (Verde para o Câmbio Fixo e Vermelho para o Flutuante), aplicando-as tanto na linha quanto no preenchimento da área.</p>
+</section>
+<section id="comparativo-monetário" class="level2">
+<h2 class="anchored" data-anchor-id="comparativo-monetário">Comparativo Monetário</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>dados_dolar <span class="ot">&lt;-</span> <span class="fu">get_series</span>(<span class="dv">3697</span>, <span class="at">start_date=</span><span class="st">"2003-01-01"</span>, <span class="at">end_date =</span> <span class="st">"2006-12-31"</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(dados_dolar)[<span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="st">"value"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>dados_china <span class="ot">&lt;-</span> <span class="fu">get_series</span>(<span class="dv">21631</span>, <span class="at">start_date =</span> <span class="st">"2003-01-01"</span>,<span class="at">end_date =</span> <span class="st">"2006-12-31"</span>)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(dados_china)[<span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="st">"value"</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>dados_euro<span class="ot">&lt;-</span> <span class="fu">get_series</span>(<span class="dv">21619</span>, <span class="at">start_date=</span> <span class="st">"2003-01-01"</span>, <span class="at">end_date=</span> <span class="st">"2006-12-31"</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(dados_euro)[<span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="st">"value"</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a> dados_moedas <span class="ot">&lt;-</span> dados_dolar <span class="sc">%&gt;%</span> </span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a> <span class="fu">inner_join</span>(dados_china,<span class="at">by=</span> <span class="st">"date"</span>,<span class="at">suffix =</span> <span class="fu">c</span>(<span class="st">"_dolar"</span>,<span class="st">"_china"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">inner_join</span>(dados_euro,<span class="at">by=</span><span class="st">"date"</span>)</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a> <span class="fu">names</span>(dados_moedas) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Data"</span>,<span class="st">"Dolar"</span>,<span class="st">"Yuan"</span>,<span class="st">"Euro"</span>)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a> dados_grafico <span class="ot">&lt;-</span> dados_moedas <span class="sc">%&gt;%</span> <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">c</span>(Dolar,Yuan,Euro), <span class="at">names_to =</span> <span class="st">"Moeda"</span> , <span class="at">values_to =</span> <span class="st">"Taxa"</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Este script coleta e unifica as taxas de câmbio do Dólar, Yuan e Euro em relação ao Real entre 2003 e 2006 (período do primeiro governo Lula), utilizando o pacote rbcb para consultar as séries históricas <code>3697, 21631 e 21619</code> direto da API do Banco Central do Brasil. Após a captura, o código padroniza a estrutura dos três conjuntos de dados renomeando as colunas originais de cotação para “value”, o que permite cruzá-los sequencialmente através da função <code>inner_join()</code>, combinando as tabelas com base na data comum (date) e aplicando sufixos temporários para evitar o conflito de colunas com nomes idênticos. Com os dados unificados em uma única tabela, os nomes das colunas são traduzidos e limpos para<code>"Data", "Dolar", "Yuan" e "Euro"</code>. Por fim, o código utiliza a função <code>pivot_longer()</code> do pacote tidyr (do ecossistema tidyverse) para realizar uma operação de pivotagem, transformando a tabela do formato “largo” (onde cada moeda ocupava uma coluna própria) para o formato “longo”, empilhando as cotações em uma única coluna chamada “Taxa” e identificando a qual divisa pertencem na coluna “Moeda”, gerando uma estrutura otimizada e pronta para a plotagem de múltiplas linhas comparativas no <code>ggplot2</code>.</p>
+</section>
+<section id="taxa-selic" class="level2">
+<h2 class="anchored" data-anchor-id="taxa-selic">Taxa Selic</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>dados_selic <span class="ot">&lt;-</span> <span class="fu">get_series</span>(<span class="dv">4189</span>, <span class="at">start_date =</span> <span class="st">"2003-01-01"</span>, <span class="at">end_date =</span> <span class="st">"2006-12-31"</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(dados_selic)[<span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="st">"Selic"</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(dados_selic)[<span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="st">"Anos"</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(dados_selic, <span class="fu">aes</span>(<span class="at">x=</span> Anos, <span class="at">y =</span> Selic))<span class="sc">+</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">color=</span> <span class="st">"#ffc222"</span>,<span class="at">size=</span><span class="fl">1.2</span>)<span class="sc">+</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_date</span>(<span class="at">date_breaks =</span> <span class="st">"1 year"</span>, <span class="at">date_labels =</span><span class="st">"%Y"</span>)<span class="sc">+</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="cf">function</span>(x)<span class="fu">paste0</span>(x,<span class="st">"%"</span>))<span class="sc">+</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Política Monetária Rígida e Queda Gradual dos Juros"</span>,</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"O impacto dos juros na economia nos anos (2003-2007)"</span>,</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"Fonte: Banco do Central/ SGS"</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  )<span class="sc">+</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()<span class="sc">+</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Este script utiliza o pacote <code>rbcb</code> para coletar a série histórica da Taxa Selic acumulada no mês (código <code>4189</code>) direto da API do Banco Central do Brasil, delimitando o período entre 2003 e 2006 (primeiro governo Lula). Na etapa de preparação, o código renomeia as colunas originais do conjunto de dados para <code>"Anos"</code> (eixo temporal) e <code>"Selic"</code> (indicador econômico) para deixar a estrutura clara. Em seguida, os dados são alimentados no <code>ggplot2</code> para a construção de um gráfico de linha (<code>geom_line</code>) com espessura destacada (<code>size = 1.2</code>) e na cor amarela (<code>#ffc222</code>). A estilização dos eixos inclui a escala temporal do eixo X configurada para exibir marcadores de ano em ano (<code>%Y</code>) e o eixo Y customizado por uma função anônima que adiciona o símbolo de porcentagem (<code>%</code>) aos valores. Por fim, o gráfico recebe títulos informativos e contextuais através da função <code>labs()</code>, adota o tema visual limpo <code>theme_minimal()</code> e posiciona a legenda na parte inferior da imagem através do argumento <code>legend.position = "bottom"</code></p>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     

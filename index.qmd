@@ -8,7 +8,7 @@ page-layout: full
 | Governo   | Período       | Partido | Presidente                |
 |-----------|---------------|---------|---------------------------|
 | FHC       | 1995–2002     | PSDB    | Fernando Henrique Cardoso |
-| Lula I    | 2003–20       | PT      | Luiz Inácio Lula da Silva |
+| Lula I    | 2003–2006       | PT      | Luiz Inácio Lula da Silva |
 | Lula II   | 2007–2010     | PT      | Luiz Inácio Lula da Silva |
 | Dilma I   | 2011–2014     | PT      | Dilma Rousseff            |
 | Dilma II  | 2015–2016     | PT      | Dilma Rousseff            |

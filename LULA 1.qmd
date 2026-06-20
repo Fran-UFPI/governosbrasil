@@ -81,7 +81,7 @@ ggplot(dados_fhc, aes(x= data_final, y= ipca_trimestral)) +
   subtitle = "Variação da inflação a apartir de 2003 (Ano Base Dezembro 1993)",
   x = "Ano",
   y = "Inflação trimestral %",
-    caption = "Fonte:Banco Central do Brasil/ SGS",
+    caption = "Fonte:IBGE",
   )+
   theme_minimal()+
 theme(legend.position = "bottom")
@@ -240,7 +240,7 @@ ggplot(dados_fhc, aes(x= data_final, y= ipca_trimestral)) +
     subtitle = "Inflação nos anos 2007-2010 (Ano Base dezembro 1993)",
     x = "Ano",
     y = "Variação trimestral %",
-    caption = "Fonte:Banco Central do Brasil/ SGS",
+    caption = "Fonte: IBGE",
   )+
   theme_minimal()+
 theme(legend.position = "bottom")

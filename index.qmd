@@ -1,5 +1,5 @@
 ---
-title: "Governos Brasileiros 1995–2025"
+title: "Governos"
 subtitle: "Análise histórica e econômica dos governos presidenciais"
 page-layout: full
 ---

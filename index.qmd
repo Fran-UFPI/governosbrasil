@@ -1,0 +1,33 @@
+---
+title: "Governos Brasileiros 1995–2025"
+subtitle: "Análise histórica e econômica dos governos presidenciais"
+page-layout: full
+---
+## Linha do tempo
+
+| Governo   | Período       | Partido | Presidente                |
+|-----------|---------------|---------|---------------------------|
+| FHC       | 1995–2002     | PSDB    | Fernando Henrique Cardoso |
+| Lula I    | 2003–20       | PT      | Luiz Inácio Lula da Silva |
+| Lula II   | 2007–2010     | PT      | Luiz Inácio Lula da Silva |
+| Dilma I   | 2011–2014     | PT      | Dilma Rousseff            |
+| Dilma II  | 2015–2016     | PT      | Dilma Rousseff            |
+| Temer     | 2016–2018     | MDB     | Michel Temer              |
+| Bolsonaro | 2019–2022     | PL      | Jair Bolsonaro            |
+| Lula III  | 2023–Presente | PT      | Luiz Inácio Lula da Silva |
+
+## Governos
+
+### FHC
+**1995 – 2002 · PSDB**
+
+Dois mandatos marcados pela implementação do Plano Real, controle da hiperinflação e privatizações. Adoção do regime de metas de inflação e câmbio flutuante em 1999.
+
+[Ver análise →](FHC.qmd)
+
+### Lula I e II
+**2003 – 2010 · PT**
+
+Dois mandatos marcados pela manutenção da ortodoxia econômica, expansão dos programas sociais e boom das commodities. Enfrentamento da crise financeira global de 2008 com políticas anticíclicas. PIB cresceu 7,5% em 2010.
+
+[Ver análise →](LULA 1.qmd)

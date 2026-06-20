@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Governos Brasileiros 1995–2025",
+    "section": "",
+    "text": "Governo\nPeríodo\nPartido\nPresidente\n\n\n\n\nFHC\n1995–2002\nPSDB\nFernando Henrique Cardoso\n\n\nLula I\n2003–20\nPT\nLuiz Inácio Lula da Silva\n\n\nLula II\n2007–2010\nPT\nLuiz Inácio Lula da Silva\n\n\nDilma I\n2011–2014\nPT\nDilma Rousseff\n\n\nDilma II\n2015–2016\nPT\nDilma Rousseff\n\n\nTemer\n2016–2018\nMDB\nMichel Temer\n\n\nBolsonaro\n2019–2022\nPL\nJair Bolsonaro\n\n\nLula III\n2023–Presente\nPT\nLuiz Inácio Lula da Silva"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "index.html#linha-do-tempo",
+    "href": "index.html#linha-do-tempo",
+    "title": "Governos Brasileiros 1995–2025",
+    "section": "",
+    "text": "Governo\nPeríodo\nPartido\nPresidente\n\n\n\n\nFHC\n1995–2002\nPSDB\nFernando Henrique Cardoso\n\n\nLula I\n2003–20\nPT\nLuiz Inácio Lula da Silva\n\n\nLula II\n2007–2010\nPT\nLuiz Inácio Lula da Silva\n\n\nDilma I\n2011–2014\nPT\nDilma Rousseff\n\n\nDilma II\n2015–2016\nPT\nDilma Rousseff\n\n\nTemer\n2016–2018\nMDB\nMichel Temer\n\n\nBolsonaro\n2019–2022\nPL\nJair Bolsonaro\n\n\nLula III\n2023–Presente\nPT\nLuiz Inácio Lula da Silva"
+  },
+  {
+    "objectID": "index.html#governos",
+    "href": "index.html#governos",
+    "title": "Governos Brasileiros 1995–2025",
+    "section": "Governos",
+    "text": "Governos\n\nFHC\n1995 – 2002 · PSDB\nDois mandatos marcados pela implementação do Plano Real, controle da hiperinflação e privatizações. Adoção do regime de metas de inflação e câmbio flutuante em 1999.\nVer análise →\n\n\nLula I e II\n2003 – 2010 · PT\nDois mandatos marcados pela manutenção da ortodoxia econômica, expansão dos programas sociais e boom das commodities. Enfrentamento da crise financeira global de 2008 com políticas anticíclicas. PIB cresceu 7,5% em 2010.\nVer análise →"
+  }
+]

@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Governos Brasileiros 1995–2025"
+  description: "Análise histórica e econômica dos governos presidenciais brasileiros"
+  navbar:
+    left:
+      - text: "Início"
+        href: index.qmd
+      - text: "Governos"
+        menu:
+          - text: "FHC (1995–2003)"
+            href: FHC.qmd
+          - text: "Lula I (2003–2011)"
+            href: LULA 1.qmd
+ 
+format:
+  html:
+    theme: cosmo
+    css: assets/custom.css
+    toc: true
+    toc-depth: 3
+    lang: pt-BR

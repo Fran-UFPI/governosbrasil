@@ -3,7 +3,7 @@ title: "Os Governos Lula: O Boom das Commodities e a Expansão do Mercado Intern
 format: html
 ---
 
-![](imagens/Lula.jpg){fig-align="center"width="30%"}
+![](imagens/Lula.jpg){fig-align="center" width="30%"}
 
 ## Introdução
 

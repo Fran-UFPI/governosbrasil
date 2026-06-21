@@ -39,7 +39,7 @@ Mas o mercado ainda não estava convencido. Quando Lula tomou posse em janeiro d
 #| echo: false
 #| message: false
 #| warning: false
-rm(list = ls())
+
 library(rbcb)
 library(ggplot2)
 library(magrittr)

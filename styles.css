@@ -116,3 +116,5 @@ h2 {
   background-color: var(--verde-escuro);
   color: #9fcfb0;
   font-size: 0.85rem;
+  padding: 1rem 0;
+}

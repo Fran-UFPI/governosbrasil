@@ -1,26 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Governos Brasileiros 1995–2025",
-    "section": "",
-    "text": "Governo\nPeríodo\nPartido\nPresidente\n\n\n\n\nFHC\n1995–2002\nPSDB\nFernando Henrique Cardoso\n\n\nLula I\n2003–2006\nPT\nLuiz Inácio Lula da Silva\n\n\nLula II\n2007–2010\nPT\nLuiz Inácio Lula da Silva\n\n\nDilma I\n2011–2014\nPT\nDilma Rousseff\n\n\nDilma II\n2015–2016\nPT\nDilma Rousseff\n\n\nTemer\n2016–2018\nMDB\nMichel Temer\n\n\nBolsonaro\n2019–2022\nPL\nJair Bolsonaro\n\n\nLula III\n2023–Presente\nPT\nLuiz Inácio Lula da Silva"
-  },
-  {
-    "objectID": "index.html#linha-do-tempo",
-    "href": "index.html#linha-do-tempo",
-    "title": "Governos Brasileiros 1995–2025",
-    "section": "",
-    "text": "Governo\nPeríodo\nPartido\nPresidente\n\n\n\n\nFHC\n1995–2002\nPSDB\nFernando Henrique Cardoso\n\n\nLula I\n2003–2006\nPT\nLuiz Inácio Lula da Silva\n\n\nLula II\n2007–2010\nPT\nLuiz Inácio Lula da Silva\n\n\nDilma I\n2011–2014\nPT\nDilma Rousseff\n\n\nDilma II\n2015–2016\nPT\nDilma Rousseff\n\n\nTemer\n2016–2018\nMDB\nMichel Temer\n\n\nBolsonaro\n2019–2022\nPL\nJair Bolsonaro\n\n\nLula III\n2023–Presente\nPT\nLuiz Inácio Lula da Silva"
-  },
-  {
-    "objectID": "index.html#governos",
-    "href": "index.html#governos",
-    "title": "Governos Brasileiros 1995–2025",
-    "section": "Governos",
-    "text": "Governos\n\nFHC\n1995 – 2002 · PSDB\nDois mandatos marcados pela implementação do Plano Real, controle da hiperinflação e privatizações. Adoção do regime de metas de inflação e câmbio flutuante em 1999.\nVer análise →\n\n\nLula I e II\n2003 – 2010 · PT\nDois mandatos marcados pela manutenção da ortodoxia econômica, expansão dos programas sociais e boom das commodities. Enfrentamento da crise financeira global de 2008 com políticas anticíclicas. PIB cresceu 7,5% em 2010.\nVer análise →"
-  },
-  {
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
     "title": "Welcome To My Blog",
@@ -75,13 +54,6 @@
     "title": "Os Governos Lula: O Boom das Commodities e a Expansão do Mercado Interno",
     "section": "A Taxa Selic",
     "text": "A Taxa Selic\n\n\n\n\n\n\n\n\n\nO gráfico da Selic no segundo mandato do governo Lula tem diferentes movimentos cada um com sua causa distinta.Em 2007, a linha parte de 13% e cai gradualmente até próximo de 11% — o BC dava continuidade ao ciclo de cortes iniciado no mandato anterior, com a inflação comportada e o câmbio valorizado dando espaço para juros menores. Mas essa trajetória não durou. Com a economia aquecendo e o consumo das famílias crescendo de forma acelerada, o risco de pressão inflacionária voltou ao radar. O BC reagiu e, ao longo de 2008, elevou a Selic de volta para 13,75% — o pico do mandato.\nO que veio a seguir mudou tudo. Com a eclosão da crise financeira global no final de 2008, o BC reverteu completamente o ciclo. A linha despenca de forma vertical: em poucos meses, a Selic saiu de 13,75% para menos de 9% — o menor patamar da história do regime de metas até então. Era a política anticíclica em ação: juros baixos para estimular o crédito, sustentar o consumo e evitar que a recessão global se aprofundasse no Brasil.\nA recuperação foi rápida. Com o PIB crescendo 7,5% em 2010 e a economia voltando a aquecer, a inflação voltou a pressionar — e o BC começou a subir os juros novamente, encerrando o mandato com a Selic já em alta. O gráfico termina onde um novo ciclo começa."
-  },
-  {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "fernando_hc.html#introdução",
@@ -152,5 +124,33 @@
     "title": "Falando sobre os códigos",
     "section": "Taxa Selic",
     "text": "Taxa Selic\n\ndados_selic &lt;- get_series(4189, start_date = \"2003-01-01\", end_date = \"2006-12-31\")\nnames(dados_selic)[2] &lt;- \"Selic\"\nnames(dados_selic)[1] &lt;- \"Anos\"\nggplot(dados_selic, aes(x= Anos, y = Selic))+\n  geom_line(color= \"#ffc222\",size=1.2)+\n  scale_x_date(date_breaks = \"1 year\", date_labels =\"%Y\")+\n  scale_y_continuous(labels = function(x)paste0(x,\"%\"))+\n  labs(\n    title = \"Política Monetária Rígida e Queda Gradual dos Juros\",\n    subtitle = \"O impacto dos juros na economia nos anos (2003-2007)\",\n    caption = \"Fonte: Banco do Central/ SGS\"\n  )+\n  theme_minimal()+\n  theme(legend.position = \"bottom\")\n\nEste script utiliza o pacote rbcb para coletar a série histórica da Taxa Selic acumulada no mês (código 4189) direto da API do Banco Central do Brasil, delimitando o período entre 2003 e 2006 (primeiro governo Lula). Na etapa de preparação, o código renomeia as colunas originais do conjunto de dados para \"Anos\" (eixo temporal) e \"Selic\" (indicador econômico) para deixar a estrutura clara. Em seguida, os dados são alimentados no ggplot2 para a construção de um gráfico de linha (geom_line) com espessura destacada (size = 1.2) e na cor amarela (#ffc222). A estilização dos eixos inclui a escala temporal do eixo X configurada para exibir marcadores de ano em ano (%Y) e o eixo Y customizado por uma função anônima que adiciona o símbolo de porcentagem (%) aos valores. Por fim, o gráfico recebe títulos informativos e contextuais através da função labs(), adota o tema visual limpo theme_minimal() e posiciona a legenda na parte inferior da imagem através do argumento legend.position = \"bottom\""
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Governos Brasileiros 1995–2025",
+    "section": "",
+    "text": "Governo\nPeríodo\nPartido\nPresidente\n\n\n\n\nFHC\n1995–2002\nPSDB\nFernando Henrique Cardoso\n\n\nLula I\n2003–2006\nPT\nLuiz Inácio Lula da Silva\n\n\nLula II\n2007–2010\nPT\nLuiz Inácio Lula da Silva\n\n\nDilma I\n2011–2014\nPT\nDilma Rousseff\n\n\nDilma II\n2015–2016\nPT\nDilma Rousseff\n\n\nTemer\n2016–2018\nMDB\nMichel Temer\n\n\nBolsonaro\n2019–2022\nPL\nJair Bolsonaro\n\n\nLula III\n2023–Presente\nPT\nLuiz Inácio Lula da Silva"
+  },
+  {
+    "objectID": "index.html#linha-do-tempo",
+    "href": "index.html#linha-do-tempo",
+    "title": "Governos Brasileiros 1995–2025",
+    "section": "",
+    "text": "Governo\nPeríodo\nPartido\nPresidente\n\n\n\n\nFHC\n1995–2002\nPSDB\nFernando Henrique Cardoso\n\n\nLula I\n2003–2006\nPT\nLuiz Inácio Lula da Silva\n\n\nLula II\n2007–2010\nPT\nLuiz Inácio Lula da Silva\n\n\nDilma I\n2011–2014\nPT\nDilma Rousseff\n\n\nDilma II\n2015–2016\nPT\nDilma Rousseff\n\n\nTemer\n2016–2018\nMDB\nMichel Temer\n\n\nBolsonaro\n2019–2022\nPL\nJair Bolsonaro\n\n\nLula III\n2023–Presente\nPT\nLuiz Inácio Lula da Silva"
+  },
+  {
+    "objectID": "index.html#governos",
+    "href": "index.html#governos",
+    "title": "Governos Brasileiros 1995–2025",
+    "section": "Governos",
+    "text": "Governos\n\nFHC\n1995 – 2002 · PSDB\nDois mandatos marcados pela implementação do Plano Real, controle da hiperinflação e privatizações. Adoção do regime de metas de inflação e câmbio flutuante em 1999.\nVer análise →\n\n\nLula I e II\n2003 – 2010 · PT\nDois mandatos marcados pela manutenção da ortodoxia econômica, expansão dos programas sociais e boom das commodities. Enfrentamento da crise financeira global de 2008 com políticas anticíclicas. PIB cresceu 7,5% em 2010.\nVer análise →"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
   }
 ]

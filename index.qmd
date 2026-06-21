@@ -30,4 +30,4 @@ Dois mandatos marcados pela implementação do Plano Real, controle da hiperinfl
 
 Dois mandatos marcados pela manutenção da ortodoxia econômica, expansão dos programas sociais e boom das commodities. Enfrentamento da crise financeira global de 2008 com políticas anticíclicas. PIB cresceu 7,5% em 2010.
 
-[Ver análise →](lula_mandato1.qmd)
+[Ver análise →](lula_mandato.qmd)

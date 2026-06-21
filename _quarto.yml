@@ -11,10 +11,10 @@ website:
         href: index.qmd
       - text: "Governos"
         menu:
-          - text: "FHC (1995–2003)"
-            href: FHC.qmd
+          - text: "Fernando H. Cardoso (1995–2003)"
+            href: Fernando_hc.qmd
           - text: "Lula I (2003–2011)"
-            href: LULA 1.qmd
+            href: LULA_mandato1.qmd
       - text: "Sobre"
         href: "about.qmd"
 format:

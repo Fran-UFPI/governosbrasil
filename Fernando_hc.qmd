@@ -36,6 +36,7 @@ O Real foi uma experiência bem-sucedida. Porém, a visão existente no começo 
 #| message: false
 #| warning: false
 
+rm(list = ls())
 library(rbcb)
 library(ggplot2)
 library(magrittr)

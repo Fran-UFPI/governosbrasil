@@ -12,9 +12,9 @@ website:
       - text: "Governos"
         menu:
           - text: "Fernando H. Cardoso (1995–2003)"
-            href: Fernando_hc.qmd
+            href: fernando_hc.qmd
           - text: "Lula I (2003–2011)"
-            href: LULA_mandato1.qmd
+            href: lula_mandato1.qmd
       - text: "Sobre"
         href: "about.qmd"
 format:

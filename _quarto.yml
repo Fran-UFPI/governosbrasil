@@ -3,20 +3,22 @@ project:
   output-dir: docs
 
 website:
-  title: "Governos Brasileiros 1995–2025"
+  title: "Governos Brasileiros 1995-2025"
   description: "Análise histórica e econômica dos governos presidenciais brasileiros"
+  site-url: https://fran-ufpi.github.io/governosbrasil/
   navbar:
     left:
       - text: "Início"
         href: index.qmd
       - text: "Governos"
         menu:
-          - text: "Fernando H. Cardoso (1995–2003)"
+          - text: "Fernando H. Cardoso (1995-2003)"
             href: fernando_hc.qmd
-          - text: "Lula I (2003–2011)"
+          - text: "Lula I (2003-2011)"
             href: lula_mandato.qmd
       - text: "Sobre"
-        href: "about.qmd"
+        href: about.qmd
+
 format:
   html:
     theme: cosmo

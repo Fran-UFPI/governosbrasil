@@ -84,7 +84,7 @@ theme(legend.position = "bottom")
   
 ```
 
-Olhando para o gráfico, fica fácil entender por que o início de 1995 foi cercado de tanta tensão. A memória do brasileiro ainda estava profundamente traumatizada pela hiperinflação. Por isso, aquela queda abrupta da linha azul no início do Plano Real não trouxe apenas alívio; trouxe também o fantasma do ceticismo. O grande medo coletivo era o de que o **Real** fosse apenas mais um "plano temporário", e que, após o sucesso inicial, os preços sofressem um efeito rebote, voltando a subir com força total.
+Olhando para o gráfico, fica fácil entender por que o início de 1995 foi cercado de tanta tensão. A memória do brasileiro ainda estava profundamente traumatizada pela hiperinflação. Por isso, aquela queda abrupta da linha vermelha no início do Plano Real não trouxe apenas alívio; trouxe também o fantasma do ceticismo. O grande medo coletivo era o de que o **Real** fosse apenas mais um "plano temporário", e que, após o sucesso inicial, os preços sofressem um efeito rebote, voltando a subir com força total.
 
 Esse receio tinha fundamento prático. Com o fim do imposto inflacionário da noite para o dia, o poder de compra da população aumentou e gerou um forte superaquecimento do consumo. Na história econômica do Brasil, uma explosão de demanda como aquela, se mal administrada, era a receita exata para fazer a inflação ressurgir das cinzas, exatamente como havia acontecido no fracassado Plano Cruzado anos antes.
 

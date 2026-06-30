@@ -15,10 +15,37 @@ library(magrittr)
 library(dplyr)
 library(tidyverse)
 library(lubridate)
+library(readxl)
+library(here)
+library(janitor)
 
-dados_ipca <- get_series(433, start_date = "2023-01-01", end_date = "2025-12-31")
-names(dados_ipca)[2] <- "value"
-ggplot(dados_ipca, aes(x= date, y= value)) +
+
+dados_inflacao <- read_excel(here("planilhaIPCA/ipca.xls"))
+dados_lula3 <- dados_inflacao %>% 
+  clean_names() %>% 
+  rename(
+    ano= 1,
+    mes_nome=2,
+    numero_indice=3,
+    ipca_trimestral=5
+  ) |>
+  fill(ano, .direction = "down")
+dados_lula3 <- dados_lula3 %>% 
+  mutate(numero_indice= as.numeric(gsub(",",".", numero_indice)),
+         ipca_trimestral= as.numeric(gsub(",",".", ipca_trimestral))
+         )%>% 
+  filter(ano>2023 & ano<2026) %>% 
+ mutate(
+   mes_num = case_when(
+      mes_nome == "JAN" ~ "01", mes_nome == "FEV" ~ "02", mes_nome == "MAR" ~ "03",
+      mes_nome == "ABR" ~ "04", mes_nome == "MAI" ~ "05", mes_nome == "JUN" ~ "06",
+      mes_nome == "JUL" ~ "07", mes_nome == "AGO" ~ "08", mes_nome == "SET" ~ "09",
+      mes_nome == "OUT" ~ "10", mes_nome == "NOV" ~ "11", mes_nome == "DEZ" ~ "12"
+    ),
+    data_final = as.Date(paste(ano, mes_num, "01", sep = "-"))
+ ) 
+
+ggplot(dados_lula3, aes(x= data_final, y= ipca_trimestral)) +
   geom_line( color= "#302681", size= 1.2)+
   scale_x_date(date_breaks = "1 year", date_labels ="%Y")+
   scale_y_continuous(labels = function(x)paste0(x,"%"))+

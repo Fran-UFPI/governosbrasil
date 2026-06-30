@@ -14,14 +14,15 @@ format: html
 library(rbcb)
 library(ggplot2)
 library(magrittr)
-library(dplyr)
 library(tidyverse)
 library(lubridate)
 library(readxl)
+library(here)
 library(janitor)
 
-dados_inflacao <- read_excel("planilhaIPCA/ipca.xls")
-dados_fhc <- dados_inflacao %>% 
+
+dados_inflacao <- read_excel(here("planilhaIPCA/ipca.xls"))
+dados_temer <- dados_inflacao %>% 
   clean_names() %>% 
   rename(
     ano= 1,
@@ -30,7 +31,7 @@ dados_fhc <- dados_inflacao %>%
     ipca_trimestral=5
   ) |>
   fill(ano, .direction = "down")
-dados_fhc <- dados_fhc %>% 
+dados_temer <- dados_temer %>% 
   mutate(numero_indice= as.numeric(gsub(",",".", numero_indice)),
          ipca_trimestral= as.numeric(gsub(",",".", ipca_trimestral))
          )%>% 

@@ -12,12 +12,14 @@ format: html
 library(rbcb)
 library(magrittr)
 library(tidyverse)
+library(ggplot2)
 library(lubridate)
 library(readxl)
+library(here)
 library(janitor)
-library(ggplot2)
 
-inflacao <- read_excel("C:/Users/franc/OneDrive/Desktop/CD/Brasil95-25/planilhaIPCA/ipca.xls")
+
+dados_inflacao <- read_excel(here("planilhaIPCA/ipca.xls"))
 dados_dilma<-inflacao %>% 
   clean_names() %>% 
   rename(

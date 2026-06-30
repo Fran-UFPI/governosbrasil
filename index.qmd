@@ -8,10 +8,9 @@ page-layout: full
 | Governo   | Período       | Partido | Presidente                |
 |-----------|---------------|---------|---------------------------|
 | FHC       | 1995–2002     | PSDB    | Fernando Henrique Cardoso |
-| Lula I    | 2003–2006       | PT      | Luiz Inácio Lula da Silva |
+| Lula I    | 2003–2006     | PT      | Luiz Inácio Lula da Silva |
 | Lula II   | 2007–2010     | PT      | Luiz Inácio Lula da Silva |
-| Dilma I   | 2011–2014     | PT      | Dilma Rousseff            |
-| Dilma II  | 2015–2016     | PT      | Dilma Rousseff            |
+| Dilma I   | 2011–2016     | PT      | Dilma Rousseff            |
 | Temer     | 2016–2018     | MDB     | Michel Temer              |
 | Bolsonaro | 2019–2022     | PL      | Jair Bolsonaro            |
 | Lula III  | 2023–Presente | PT      | Luiz Inácio Lula da Silva |
@@ -30,4 +29,37 @@ Dois mandatos marcados pela implementação do Plano Real, controle da hiperinfl
 
 Dois mandatos marcados pela manutenção da ortodoxia econômica, expansão dos programas sociais e boom das commodities. Enfrentamento da crise financeira global de 2008 com políticas anticíclicas. PIB cresceu 7,5% em 2010.
 
-[Ver análise](lula_mandato.qmd)
+[Ver análise](lula1e2.qmd)
+
+### Dilma
+
+**2011 – 2016 · PT**
+
+Dois mandatos marcados pela Nova Matriz Econômica, desonerações fiscais e controle artificial de preços. Recessão, alta do desemprego e Operação Lava Jato culminaram no impeachment em agosto de 2016.
+
+[Ver análise](dilma.qmd)
+
+### Temer
+
+**2016 – 2018 · MDB**
+
+Governo de transição focado em ajuste fiscal. Aprovação do Teto de Gastos (EC 95/2016) e da Reforma Trabalhista. Economia retomou crescimento moderado.
+
+[Ver análise](temer.qmd)
+
+### Bolsonaro
+
+**2019 – 2022 · PL**
+
+Aprovação da Reforma da Previdência (2019). Pandemia de COVID-19 gerou crise sanitária e econômica, respondida com auxílio emergencial. Inflação elevada e instabilidade institucional marcaram o período.
+
+[Ver análise](bolsonaro.qmd)
+
+### Lula III
+
+**2023 – Presente · PT**
+
+Terceiro mandato com agenda de reindustrialização e retomada de programas sociais. Aprovação do novo arcabouço fiscal em 2023. Debate entre expansão de gastos e controle da dívida pública.
+
+[Ver análise](lula3.qmd)
+

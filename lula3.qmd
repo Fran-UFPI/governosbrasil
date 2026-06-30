@@ -1,0 +1,92 @@
+---
+title: "Lula II (2023–presente)"
+format: html
+---
+## Introdução
+
+# A Inflação (IPCA)
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+library(rbcb)
+library(ggplot2)
+library(magrittr)
+library(dplyr)
+library(tidyverse)
+library(lubridate)
+
+dados_ipca <- get_series(433, start_date = "2023-01-01", end_date = "2025-12-31")
+names(dados_ipca)[2] <- "value"
+ggplot(dados_ipca, aes(x= date, y= value)) +
+  geom_line( color= "#302681", size= 1.2)+
+  scale_x_date(date_breaks = "1 year", date_labels ="%Y")+
+  scale_y_continuous(labels = function(x)paste0(x,"%"))+
+  labs(
+    title = "Comportamento do IPCA no Governo Lula III",
+    subtitle = " Convergência e Novas Metas (2023–2025)",
+    x = "Ano",
+    y = "Variação %",
+    caption = "Fonte:Banco Central do Brasil/ SGS",
+  )+
+  theme_minimal()+
+theme(legend.position = "bottom")
+```
+
+# O Regime Cambial 
+```{r}
+
+#| echo: false
+#| message: false
+#| warning: false
+
+
+dados_dolar <- get_series(3697, start_date="2023-01-01", end_date = "2025-12-31")
+names(dados_dolar)[2] <- "value"
+dados_china <- get_series(21631, start_date = "2023-01-01",end_date = "2025-12-31")
+names(dados_china)[2] <- "value"
+dados_euro<- get_series(21619, start_date= "2023-01-01", end_date= "2025-12-31")
+names(dados_euro)[2] <- "value"
+ dados_moedas <- dados_dolar %>% 
+ inner_join(dados_china,by= "date",suffix = c("_dolar","_china")) %>% 
+  inner_join(dados_euro,by="date")
+ 
+ names(dados_moedas) <- c("Data","Dolar","Yuan","Euro")
+ dados_grafico <- dados_moedas %>% pivot_longer(cols = c(Dolar,Yuan,Euro), names_to = "Moeda" , values_to = "Taxa")
+ ggplot(dados_grafico,aes(x=Data,y=Taxa,color=Moeda))+
+   geom_line(size=1)+
+   scale_x_date(date_breaks = "1 year", date_labels ="%Y")+
+  scale_y_continuous(labels = function(x)paste0(x,"R$"))+
+   labs(
+     title = "Comparativo Monetário do Real",
+     x= "Ano",
+     y= "Preço em Real(R$)",
+     color="Moedas Analisadas"
+   )+
+   theme_minimal()+
+   theme(legend.position = "bottom")
+
+```
+
+# A Taxa Selic
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+
+dados_selic <- get_series(4189, start_date = "2023-01-01", end_date = "2025-12-31")
+names(dados_selic)[2] <- "Selic"
+names(dados_selic)[1] <- "Anos"
+ggplot(dados_selic, aes(x= Anos, y = Selic))+
+  geom_line(color= "#ffc222",size=1.2)+
+  scale_x_date(date_breaks = "1 year", date_labels ="%Y")+
+  scale_y_continuous(labels = function(x)paste0(x,"%"))+
+  labs(
+    title = "Selic: O Debate sobre o Ritmo de Queda e a Meta de Juros",
+    subtitle = "O impacto dos juros na economia nos anos (2023-2025)",
+    caption = "Fonte: Banco do Central/ SGS"
+  )+
+  theme_minimal()+
+  theme(legend.position = "bottom")
+```

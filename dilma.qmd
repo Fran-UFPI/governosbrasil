@@ -2,6 +2,10 @@
 title: "O Governo Dilma: Intervencionismo Estatal e Instabilidade Política"
 format: html
 ---
+
+![](imagens/dilma.jpeg){fig-align="center" width="30%"}
+
+
 ## Introdução
 
 # A Inflação (IPCA)

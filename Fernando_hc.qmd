@@ -103,7 +103,7 @@ As autoridades reagiram em março de 1995 com um conjunto de medidas, incluindo 
 #| message: false
 #| warning: false
 
-dados_inflacao <- read_excel("planilhaIPCA/ipca.xls")
+dados_inflacao <- read_excel(here("planilhaIPCA/ipca.xls"))
 dados_fhc <- dados_inflacao %>% 
   clean_names() %>% 
   rename(

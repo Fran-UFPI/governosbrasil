@@ -2,6 +2,8 @@
 title: "A Era Temer: Ajuste Fiscal e Austeridade Econômica"
 format: html
 ---
+![](imagens/temer.jpeg){fig-align="center" width="30%"}
+
 
 ## Introdução
 

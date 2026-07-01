@@ -1,7 +1,11 @@
 ---
 title: "Lula II (2023–presente)"
 format: html
+
 ---
+
+![](imagens/lula3.jpeg){fig-align="center" width="30%"}
+
 ## Introdução
 
 # A Inflação (IPCA)

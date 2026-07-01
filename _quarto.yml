@@ -13,7 +13,7 @@ website:
       - text: "Governos"
         menu:
           - text: "Fernando H. Cardoso (1995-2003)"
-            href: fernando_hc.qmd
+            href: Fernando_hc.qmd
           - text: "Lula I (2003-2011)"
             href: lula_i_ii.qmd
           - text: "Dilma Rousseff (2011 - 12/05/2016)"

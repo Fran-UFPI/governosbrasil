@@ -2,6 +2,8 @@
 title: "O Governo Bolsonaro: Agenda Liberal e os Impactos da Pandemia"
 format: html
 ---
+![](imagens/bolsonaro.jpeg){fig-align="center" width="30%"}
+
 ## Introdução
 
 # A Inflação (IPCA)

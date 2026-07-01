@@ -14,14 +14,15 @@ format: html
 library(rbcb)
 library(ggplot2)
 library(magrittr)
-library(dplyr)
 library(tidyverse)
 library(lubridate)
 library(readxl)
+library(here)
 library(janitor)
 
-dados_inflacao <- read_excel("planilhaIPCA/ipca.xls")
-dados_fhc <- dados_inflacao %>% 
+
+dados_inflacao <- read_excel(here("planilhaIPCA/ipca.xls"))
+dados_temer <- dados_inflacao %>% 
   clean_names() %>% 
   rename(
     ano= 1,
@@ -30,7 +31,7 @@ dados_fhc <- dados_inflacao %>%
     ipca_trimestral=5
   ) |>
   fill(ano, .direction = "down")
-dados_fhc <- dados_fhc %>% 
+dados_temer <- dados_temer %>% 
   mutate(numero_indice= as.numeric(gsub(",",".", numero_indice)),
          ipca_trimestral= as.numeric(gsub(",",".", ipca_trimestral))
          )%>% 
@@ -45,7 +46,7 @@ dados_fhc <- dados_fhc %>%
     data_final = as.Date(paste(ano, mes_num, "01", sep = "-"))
  ) 
 
-ggplot(dados_fhc, aes(x= data_final, y= ipca_trimestral)) +
+ggplot(dados_temer, aes(x= data_final, y= ipca_trimestral)) +
   geom_line( color= "#302681", size= 1.2)+
   scale_x_date(date_breaks = "1 year", date_labels ="%Y")+
   scale_y_continuous(labels = function(x)paste0(x,"%"))+
@@ -79,8 +80,8 @@ names(dados_euro)[2] <- "value"
   inner_join(dados_euro,by="date")
  
  names(dados_moedas) <- c("Data","Dolar","Yuan","Euro")
- dados_grafico <- dados_moedas %>% pivot_longer(cols = c(Dolar,Yuan,Euro), names_to = "Moeda" , values_to = "Taxa")
- ggplot(dados_grafico,aes(x=Data,y=Taxa,color=Moeda))+
+ dados_graftemer <- dados_moedas %>% pivot_longer(cols = c(Dolar,Yuan,Euro), names_to = "Moeda" , values_to = "Taxa")
+ ggplot(dados_graftemer,aes(x=Data,y=Taxa,color=Moeda))+
    geom_line(size=1)+
    scale_x_date(date_breaks = "1 year", date_labels ="%Y")+
   scale_y_continuous(labels = function(x)paste0(x,"R$"))+
@@ -105,10 +106,10 @@ theme(legend.position = "bottom")
 #| warning: false
 
 
-dados_selic <- get_series(4189, start_date = "2016-05-12", end_date = "2018-12-31")
-names(dados_selic)[2] <- "Selic"
-names(dados_selic)[1] <- "Anos"
-ggplot(dados_selic, aes(x= Anos, y = Selic))+
+dados_selic_temer <- get_series(4189, start_date = "2016-05-12", end_date = "2018-12-31")
+names(dados_selic_temer)[2] <- "Selic"
+names(dados_selic_temer)[1] <- "Anos"
+ggplot(dados_selic_temer, aes(x= Anos, y = Selic))+
   geom_line(color= "#ffc222",size=1.2)+
   scale_x_date(date_breaks = "1 year", date_labels ="%Y")+
   scale_y_continuous(labels = function(x)paste0(x,"%"))+

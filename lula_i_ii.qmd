@@ -46,10 +46,12 @@ library(magrittr)
 library(tidyverse)
 library(lubridate)
 library(readxl)
+library(here)
 library(janitor)
 
-dados_inflacao <- read_excel("planilhaIPCA/ipca.xls")
-dados_fhc <- dados_inflacao %>% 
+
+dados_inflacao <- read_excel(here("planilhaIPCA/ipca.xls"))
+dados_lula1 <- dados_inflacao %>% 
   clean_names() %>% 
   rename(
     ano= 1,
@@ -58,7 +60,7 @@ dados_fhc <- dados_inflacao %>%
     ipca_trimestral=5
   ) |>
   fill(ano, .direction = "down")
-dados_fhc <- dados_fhc %>% 
+dados_lula1 <- dados_lula1 %>% 
   mutate(numero_indice= as.numeric(gsub(",",".", numero_indice)),
          ipca_trimestral= as.numeric(gsub(",",".", ipca_trimestral))
          )%>% 
@@ -73,7 +75,7 @@ dados_fhc <- dados_fhc %>%
     data_final = as.Date(paste(ano, mes_num, "01", sep = "-"))
  ) 
 
-ggplot(dados_fhc, aes(x= data_final, y= ipca_trimestral)) +
+ggplot(dados_lula1, aes(x= data_final, y= ipca_trimestral)) +
   geom_line( color= "#302681", size= 1.2)+
   scale_x_date(date_breaks = "1 year", date_labels ="%Y")+
   scale_y_continuous(labels = function(x)paste0(x,"%"))+
@@ -115,8 +117,8 @@ names(dados_euro)[2] <- "value"
   inner_join(dados_euro,by="date")
  
  names(dados_moedas) <- c("Data","Dolar","Yuan","Euro")
- dados_grafico <- dados_moedas %>% pivot_longer(cols = c(Dolar,Yuan,Euro), names_to = "Moeda" , values_to = "Taxa")
- ggplot(dados_grafico,aes(x=Data,y=Taxa,color=Moeda))+
+ dados_graflula1 <- dados_moedas %>% pivot_longer(cols = c(Dolar,Yuan,Euro), names_to = "Moeda" , values_to = "Taxa")
+ ggplot(dados_graflula1,aes(x=Data,y=Taxa,color=Moeda))+
    geom_line(size=1)+
    scale_x_date(date_breaks = "1 year", date_labels ="%Y")+
   scale_y_continuous(labels = function(x)paste0(x,"R$"))+
@@ -151,10 +153,10 @@ O yuan parado não é detalhe. É justamente o país que comprava as commodities
 #| warning: false
 
 
-dados_selic <- get_series(4189, start_date = "2003-01-01", end_date = "2006-12-31")
-names(dados_selic)[2] <- "Selic"
-names(dados_selic)[1] <- "Anos"
-ggplot(dados_selic, aes(x= Anos, y = Selic))+
+dados_selic_lula1 <- get_series(4189, start_date = "2003-01-01", end_date = "2006-12-31")
+names(dados_selic_lula1)[2] <- "Selic"
+names(dados_selic_lula1)[1] <- "Anos"
+ggplot(dados_selic_lula1, aes(x= Anos, y = Selic))+
   geom_line(color= "#ffc222",size=1.2)+
   scale_x_date(date_breaks = "1 year", date_labels ="%Y")+
   scale_y_continuous(labels = function(x)paste0(x,"%"))+
@@ -206,7 +208,7 @@ library(readxl)
 library(janitor)
 
 dados_inflacao <- read_excel("planilhaIPCA/ipca.xls")
-dados_fhc <- dados_inflacao %>% 
+dados_lula2 <- dados_inflacao %>% 
   clean_names() %>% 
   rename(
     ano= 1,
@@ -215,7 +217,7 @@ dados_fhc <- dados_inflacao %>%
     ipca_trimestral=5
   ) |>
   fill(ano, .direction = "down")
-dados_fhc <- dados_fhc %>% 
+dados_lula2 <- dados_lula2 %>% 
   mutate(numero_indice= as.numeric(gsub(",",".", numero_indice)),
          ipca_trimestral= as.numeric(gsub(",",".", ipca_trimestral))
          )%>% 
@@ -230,7 +232,7 @@ dados_fhc <- dados_fhc %>%
     data_final = as.Date(paste(ano, mes_num, "01", sep = "-"))
  ) 
 
-ggplot(dados_fhc, aes(x= data_final, y= ipca_trimestral)) +
+ggplot(dados_lula2, aes(x= data_final, y= ipca_trimestral)) +
   geom_line( color= "#302681", size= 1.2)+
   scale_x_date(date_breaks = "1 year", date_labels ="%Y")+
   scale_y_continuous(labels = function(x)paste0(x,"%"))+
@@ -269,8 +271,8 @@ names(dados_euro)[2] <- "value"
   inner_join(dados_euro,by="date")
  
  names(dados_moedas) <- c("Data","Dolar","Yuan","Euro")
- dados_grafico <- dados_moedas %>% pivot_longer(cols = c(Dolar,Yuan,Euro), names_to = "Moeda" , values_to = "Taxa")
- ggplot(dados_grafico,aes(x=Data,y=Taxa,color=Moeda))+
+ dados_graflula2 <- dados_moedas %>% pivot_longer(cols = c(Dolar,Yuan,Euro), names_to = "Moeda" , values_to = "Taxa")
+ ggplot(dados_graflula2,aes(x=Data,y=Taxa,color=Moeda))+
    geom_line(size=1)+
    scale_x_date(date_breaks = "1 year", date_labels ="%Y")+
   scale_y_continuous(labels = function(x)paste0(x,"R$"))+
@@ -306,10 +308,10 @@ O yuan, como no mandato anterior, permanece colado no chão durante todo o perí
 #| warning: false
 
 
-dados_selic <- get_series(4189, start_date = "2007-01-01", end_date = "2010-12-31")
-names(dados_selic)[2] <- "Selic"
-names(dados_selic)[1] <- "Anos"
-ggplot(dados_selic, aes(x= Anos, y = Selic))+
+dados_selic_lula2 <- get_series(4189, start_date = "2007-01-01", end_date = "2010-12-31")
+names(dados_selic_lula2)[2] <- "Selic"
+names(dados_selic_lula2)[1] <- "Anos"
+ggplot(dados_selic_lula2, aes(x= Anos, y = Selic))+
   geom_line(color= "#ffc222",size=1.2)+
   scale_x_date(date_breaks = "1 year", date_labels ="%Y")+
   scale_y_continuous(labels = function(x)paste0(x,"%"))+

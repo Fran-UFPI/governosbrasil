@@ -29,7 +29,7 @@ Dois mandatos marcados pela implementação do Plano Real, controle da hiperinfl
 
 Dois mandatos marcados pela manutenção da ortodoxia econômica, expansão dos programas sociais e boom das commodities. Enfrentamento da crise financeira global de 2008 com políticas anticíclicas. PIB cresceu 7,5% em 2010.
 
-[Ver análise](lula1e2.qmd)
+[Ver análise](lula_i_ii.qmd)
 
 ### Dilma
 
@@ -61,5 +61,5 @@ Aprovação da Reforma da Previdência (2019). Pandemia de COVID-19 gerou crise 
 
 Terceiro mandato com agenda de reindustrialização e retomada de programas sociais. Aprovação do novo arcabouço fiscal em 2023. Debate entre expansão de gastos e controle da dívida pública.
 
-[Ver análise](lula3.qmd)
+[Ver análise](lula_iii.qmd)
 

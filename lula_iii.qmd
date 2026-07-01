@@ -70,7 +70,7 @@ theme(legend.position = "bottom")
 
 dados_dolar <- get_series(3697, start_date="2023-01-01", end_date = "2025-12-31")
 names(dados_dolar)[2] <- "value"
-dados_china <- get_series(21631, start_date = "2023-01-01",end_date = "2025-12-31")
+dados_china <- get_series(21631, start_date = "2023-01-01", end_date = "2025-12-31")
 names(dados_china)[2] <- "value"
 dados_euro<- get_series(21619, start_date= "2023-01-01", end_date= "2025-12-31")
 names(dados_euro)[2] <- "value"
@@ -79,8 +79,8 @@ names(dados_euro)[2] <- "value"
   inner_join(dados_euro,by="date")
  
  names(dados_moedas) <- c("Data","Dolar","Yuan","Euro")
- dados_grafico <- dados_moedas %>% pivot_longer(cols = c(Dolar,Yuan,Euro), names_to = "Moeda" , values_to = "Taxa")
- ggplot(dados_grafico,aes(x=Data,y=Taxa,color=Moeda))+
+ dados_graflula3 <- dados_moedas %>% pivot_longer(cols = c(Dolar,Yuan,Euro), names_to = "Moeda" , values_to = "Taxa")
+ ggplot(dados_graflula3,aes(x=Data,y=Taxa,color=Moeda))+
    geom_line(size=1)+
    scale_x_date(date_breaks = "1 year", date_labels ="%Y")+
   scale_y_continuous(labels = function(x)paste0(x,"R$"))+
@@ -102,10 +102,10 @@ names(dados_euro)[2] <- "value"
 #| warning: false
 
 
-dados_selic <- get_series(4189, start_date = "2023-01-01", end_date = "2025-12-31")
-names(dados_selic)[2] <- "Selic"
-names(dados_selic)[1] <- "Anos"
-ggplot(dados_selic, aes(x= Anos, y = Selic))+
+dados_selic_lula3 <- get_series(4189, start_date = "2023-01-01", end_date = "2025-12-31")
+names(dados_selic_lula3)[2] <- "Selic"
+names(dados_selic_lula3)[1] <- "Anos"
+ggplot(dados_selic_lula3, aes(x= Anos, y = Selic))+
   geom_line(color= "#ffc222",size=1.2)+
   scale_x_date(date_breaks = "1 year", date_labels ="%Y")+
   scale_y_continuous(labels = function(x)paste0(x,"%"))+
